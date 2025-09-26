@@ -34,7 +34,7 @@ public class ReBinding1 : MonoBehaviour
         rebindingOperation.Dispose(); //Remove Old Bindings
         startRebindObject.SetActive(true); 
         waitingForInputObject.SetActive(false);
-        playerController.playerInput.SwitchCurrentActionMap("Player"); //Show Button, Hide Waiting Text, Switch Controls
+        playerController.playerInput.SwitchCurrentActionMap("MainGame"); //Show Button, Hide Waiting Text, Switch Controls
     }
 
 }
