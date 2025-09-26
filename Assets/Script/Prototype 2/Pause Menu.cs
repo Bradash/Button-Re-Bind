@@ -4,6 +4,7 @@ public class PauseMenu : MonoBehaviour
 {
     public bool isPaused;
     public GameObject pauseMenu;
+    public MainGame game;
 
 
     private void Start()
@@ -18,12 +19,14 @@ public class PauseMenu : MonoBehaviour
             pauseMenu.SetActive(false);
             Time.timeScale = 1f;
             isPaused = false;
+            game.isInputOn = true;
         }
         else
         {
             pauseMenu.SetActive(true);
             Time.timeScale = 0f;
             isPaused = true;
+            game.isInputOn = false;
         }
         Debug.Log("pressed");
 
